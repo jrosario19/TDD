@@ -12,4 +12,17 @@ describe 'Solver::factorial' do
     it 'returns 1 for 1' do
       expect(Solver.factorial(1)).to eq(1)
     end
+    it 'raises an error for negative numbers' do
+        expect { Solver.factorial(-1) }.to raise_error(ArgumentError)
+      end
 end
+
+describe 'Solver::reverse' do
+    it 'returns the reverse of the given string' do
+      expect(Solver.reverse('hello')).to eq('olleh')
+    end
+  
+    it 'returns the reverse of the given string' do
+      expect(Solver.reverse('hello world')).to eq('dlrow olleh')
+    end
+  end
