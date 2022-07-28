@@ -1,5 +1,5 @@
 
-
+require './solver'
 describe 'Solver::factorial' do
     it 'returns the factorial of the given number' do
       expect(Solver.factorial(5)).to eq(120)
